@@ -1,0 +1,108 @@
+[
+    {
+        "name":"Stamp coat",
+        "price":"$50",
+        "description":"",
+        "size": ["S","M","L"],
+        "imagen":[""]
+    },
+    {
+        "name":"BLUE shirt",
+        "price":"$20",
+        "description":"",
+        "size": ["M","L","XL"],
+        "imagenes":["/productos/pantalon",""]
+    },
+    {
+        "name":"Fluff Jacket",
+        "price":"$80",
+        "description":"",
+        "size": ["M","L","XL"],
+        "imagen":""
+    },
+    {
+        "name":"Cool Cold",
+        "price":"$60",
+        "description":"",
+        "size": ["S","M","XL"],
+        "imagen":""
+    },
+    {
+        "name":"MiniBlack",
+        "price":"$55",
+        "description":"",
+        "size": ["28","30","32","33"],
+        "imagen":""
+    },
+    {
+        "name":"Wool Hat",
+        "price":"$55",
+        "description":"",
+        "size": "Unique Size",
+        "imagen":""
+    },
+    {
+        "name":"Bermude B",
+        "price":"$50",
+        "description":"",
+        "size": ["28","30","31"],
+        "imagen":""
+    },
+    {
+        "name":"Shoulder Carpet",
+        "price":"$70",
+        "description":"",
+        "size": "Unique Sieze",
+        "imagen":""
+    },
+    {
+        "name":"Turtle Coat",
+        "price":"$65",
+        "description":"",
+        "size": ["M","L","XL"],
+        "imagen":""
+    },
+    {
+        "name":"PantSkirt",
+        "price":"$70",
+        "description":"",
+        "size": ["28","30"],
+        "imagen":""
+    },
+    {
+        "name":"CartonPant",
+        "price":"$80",
+        "description":"",
+        "size": ["28","30","31","32"],
+        "imagen":""
+    },
+    {
+        "name":"MiniCoat",
+        "price":"$75",
+        "description":"",
+        "size": ["XS","S","M","L"],
+        "imagen":""
+    },
+    {
+        "name":"SweatPant",
+        "price":"$55",
+        "description":"",
+        "size": ["28","30","33"],
+        "imagen":""
+    },
+    {
+        "name":"CoffeCoat",
+        "price":"$75",
+        "description":"",
+        "size": ["S","M","L"],
+        "imagen":""
+    },
+    {
+        "name":"Unisex Jacket",
+        "price":"$65",
+        "description":"",
+        "size": ["XS","S","M","L","XL"],
+        "imagen":""
+    }
+    
+]
