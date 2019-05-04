@@ -11,7 +11,7 @@
         "price":"$20",
         "description":"",
         "size": ["M","L","XL"],
-        "imagenes":["/productos/pantalon",""]
+        "imagenes":["/productos/pantalon","/imagenes/"]
     },
     {
         "name":"Fluff Jacket",
@@ -46,7 +46,7 @@
         "price":"$50",
         "description":"",
         "size": ["28","30","31"],
-        "imagen":""
+        "imagen":["/productos/bermudeb/1","./productos/bermudeb/2","./productos/bermudeb/3"]
     },
     {
         "name":"Shoulder Carpet",

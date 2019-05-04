@@ -11,26 +11,19 @@ const dbName = 'skere';
 
 //Create Clietn Object
 const client = new MongoClient(url);
+
+var db = null;
+
 //connect 
 client.connect(function(err){
-assert.equal(null,err);
-console.log("Estamos conectados");
+    assert.equal(null,err);
+    console.log("Estamos conectados");
+    
 
 //Conect to database
-const db=client.db(dbName);
+db =client.db(dbName);
 
-const productos= db.collection('productos');
-productos.find({}, {sort:['price']}).toArray(function(err,docs){
- assert.equal(null,err);
- console.log("encontramos atlantis");
- console.log(docs.length);
-
- docs.forEach(function(prod){
-     console.log(prod.price);
- })
-});
-
-client.close();
+//client.close();
 
 });
 
@@ -46,7 +39,18 @@ app.get('/', function(request,response){
     response.render('home');
 });
 app.get('/store', function(request,response){
-    response.render('store');
+    
+    var productos= db.collection('productos');
+
+    productos.find({}).toArray(function(err,docs){
+     assert.equal(null,err);
+    // console.log("encontramos atlantis");
+     var contexto ={
+         productos: docs
+     };
+     response.render('store',contexto);
+
+    });
 });
 
 app.listen(3000, function() {
