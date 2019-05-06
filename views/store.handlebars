@@ -8,12 +8,41 @@
 </head>
 <body>
 
-    <h1>Tienda</h1>
+    <h1>Online Store</h1>
+    <h2>Category</h2>
+    <h3>Type</h3>
+    <ul>
+        <li><a href="/store/top">Top</a></li>
+         <li><a href="/store/bottom">Bottom</a></li>
+         <li><a href="/store/accesories">Accesories</a></li>
+    </ul>
+    <h3>Gender</h3>
+    <ul>
+        <li><a href="/store/man">Man</a></li>
+         <li><a href="/store/woman">Woman</a></li>
+         <li><a href="/store/unisex">Unisex</a></li>
+    </ul>
+    <p>Price</p>
+    <input type="range" min="20" max="80">
+    
     <ul>
     {{#each productos}}
-   <li>{{name}} </li> 
+   <li>
+       <img src="{{imagen.[0]}}" width="200px">
+       <h3><a href="/store/{{name}}">{{name}}</a></h3>
+       <p>{{price}}</p>
+        </li> 
        {{/each}}
 
     </ul>
+    <script>
+var rank = document.querySelector('.input-rank');
+
+function byPrice (){
+
+}
+rank.addEventListener('input', byPrice);
+
+    </script>
 </body>
 </html>

@@ -2,107 +2,137 @@
     {
         "name":"Stamp coat",
         "price":"$50",
-        "description":"",
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
         "size": ["S","M","L"],
-        "imagen":[""]
+        "imagen":["/productos/stampcoat/1.jpg", "/productos/stampcoat/2.jpg"],
+        "category":"top",
+        "gender":"unisex"
     },
     {
         "name":"BLUE shirt",
         "price":"$20",
-        "description":"",
+        "description":"Rare shirt, with a pink pocket to contrast the background, ideal if you're the weird kid in school and want to be cool",
         "size": ["M","L","XL"],
-        "imagenes":["/productos/pantalon","/imagenes/"]
+        "imagenes":["/productos/blueshirt/1.jpg","/productos/blueshirt/2.jpg","/productos/blueshirt/3.jpg"],
+        "category":"top",
+        "gender":"man"
     },
     {
         "name":"Fluff Jacket",
         "price":"$80",
-        "description":"",
+        "description":"A beautiful unisex jacket for you to feel very warm and very comfortable, obviously while looking cool",
         "size": ["M","L","XL"],
-        "imagen":""
+        "imagen":["/productos/fluffjacket/1.jpg","/productos/fluffjacket/2.jpg","/productos/fluffjacket/3.jpg"],
+        "category":"top",
+        "gender":"unisex"
     },
     {
         "name":"Cool Cold",
         "price":"$60",
-        "description":"",
+        "description":"It looks different with coolcold, it will not give you cold even if you are in the north pole",
         "size": ["S","M","XL"],
-        "imagen":""
+        "imagen":["/productos/coolcold/1.jpg","/productos/coolcold/2.jpg"],
+        "category":"top",
+        "gender":"man"
     },
     {
         "name":"MiniBlack",
         "price":"$55",
-        "description":"",
+        "description":"The best miniskirt, fresh, classic and cool. Show yourself as you are without fear of what people say",
         "size": ["28","30","32","33"],
-        "imagen":""
+        "imagen":["/productos/miniblack/1.jpg","/productos/miniblack/2.jpg","/productos/miniblack/3.jpg"],
+        "category":"bottom",
+        "gender":"woman"
     },
     {
         "name":"Wool Hat",
         "price":"$55",
-        "description":"",
+        "description":"If you have cold in your head, what do you expect to buy the woolhat that protects you from the snowfall",
         "size": "Unique Size",
-        "imagen":""
+        "imagen":["/productos/woolhat/1.jpg", "/productos/woolhat/2.jpg","/productos/woolhat/3.jpg"],
+        "category":"accesories",
+        "gender":"unisex"
     },
     {
         "name":"Bermude B",
         "price":"$50",
-        "description":"",
+        "description":"Something urban that will make you feel like you are the coolest person among all your friends",
         "size": ["28","30","31"],
-        "imagen":["/productos/bermudeb/1","./productos/bermudeb/2","./productos/bermudeb/3"]
+        "imagen":["/productos/bermudeb/1.jpg","/productos/bermudeb/2.jpg","/productos/bermudeb/3.jpg"],
+        "category":"bottom",
+        "gender":"man"
     },
     {
         "name":"Shoulder Carpet",
         "price":"$70",
-        "description":"",
+        "description":"If you suffer from cold on your shoulders and are tired of lying on your carpet, buy one for your shoulders",
         "size": "Unique Sieze",
-        "imagen":""
+        "imagen":["/productos/shouldercarpet/1.jpg","/productos/shouldercarpet/2.jpg"],
+        "category":"accesories",
+        "gender":"unisex"
     },
     {
         "name":"Turtle Coat",
         "price":"$65",
-        "description":"",
+        "description":"It looks urban, two colors, two garments, blue and white. When you wear this garment you can wear it with all your friends and be the center of attention",
         "size": ["M","L","XL"],
-        "imagen":""
+        "imagen":["/productos/turtlecoat/1.jpg","/productos/turtlecoat/2.jpg","/productos/turtlecoat/3.jpg"],
+        "category":"top",
+        "gender":"man"
     },
     {
         "name":"PantSkirt",
         "price":"$70",
-        "description":"",
+        "description":"Is a pants? Is it a skirt? That's not a problem when we talk about skere, use it as you want, whenever you want",
         "size": ["28","30"],
-        "imagen":""
+        "imagen":["/productos/pantskirt/1.jpg","/productos/pantskirt/2.jpg","/productos/pantskirt/3.jpg"],
+        "category":"bottom",
+        "gender":"unisex"
     },
     {
         "name":"CartonPant",
         "price":"$80",
-        "description":"",
+        "description":"The color of the cardboard in your pants, ideal for formal outings that end up being informal. Look young and reborn",
         "size": ["28","30","31","32"],
-        "imagen":""
+        "imagen":["/productos/cartonpant/1.jpg","/productos/cartonpant/2.jpg","/productos/cartonpant/3.jpg"],
+        "category":"bottom",
+        "gender":"man"
     },
     {
         "name":"MiniCoat",
         "price":"$75",
-        "description":"",
+        "description":"You suffer from heat in your navel, you wear coats but you have to remove them because it gives you heat in your navel. So here I present the solution",
         "size": ["XS","S","M","L"],
-        "imagen":""
+        "imagen":["/productos/minicoat/1.jpg", "/productos/minicoat/2.jpg","/productos/minicoat/3.jpg"],
+        "category":"bottom",
+        "gender":"woman"
     },
     {
         "name":"SweatPant",
         "price":"$55",
-        "description":"",
+        "description":"RUN RUN AND RUN, whenever you want, wherever you want and clearly while always looking cool and urban",
         "size": ["28","30","33"],
-        "imagen":""
+        "imagen":["/productos/sweatpant/1.jpg","/productos/sweatpant/2.jpg","/productos/sweatpant/3.jpg"],
+        "category":"bottom",
+        "gender":"unisex"
     },
     {
         "name":"CoffeCoat",
         "price":"$75",
-        "description":"",
+        "description":"A sweater the color of your delicious coffee in your morning. dress it and let your mouth be water",
         "size": ["S","M","L"],
-        "imagen":""
+        "imagen":["/productos/coffepant/1.jpg","/productos/coffepant/2.jpg"],
+        "category":"top",
+        "gender":"woman"
     },
     {
         "name":"Unisex Jacket",
         "price":"$65",
-        "description":"",
+        "description":"It's cool, you can use it when you want, being who you are",
         "size": ["XS","S","M","L","XL"],
-        "imagen":""
+        "imagen":["/productos/unisexjacket/1.jpg","/productos/unisexjacket/2.jpg","/productos/unisexjacket/3.jpg"],
+        "category":"top",
+        "gender":"unisex"
     }
     
 ]
