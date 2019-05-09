@@ -85,18 +85,16 @@ app.get('/store/:gender', function(request,response){
     });
 });
 
-app.get('/store/:product', function(req,res){
+app.get('/product/:name', function(req,res){
     var productos= db.collection('productos');
-    var contexto= null;
-    productos.forEach(function(product){
-  
-      if(product.name == req.params.product){
-        contexto = product;
-      }
+    productos.find({name: req.params.name}).toArray(function(err,docs){
+        assert.equal(null,err)
+        var contexto = docs[0];
+        res.render('product',contexto);
     });
     console.log(req.params.product);
     
-      res.render('product',contexto);
+     
     
   });
 
