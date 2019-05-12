@@ -39,44 +39,24 @@ app.get('/', function(request,response){
     response.render('home');
 });
 
-//TODOOOOO
-app.get('/store', function(request,response){
-    
-    var productos= db.collection('productos');
-
-    productos.find({}).toArray(function(err,docs){
-     assert.equal(null,err);
-    // console.log("encontramos atlantis");
-     var contexto ={
-         productos: docs
-     };
-     response.render('store',contexto);
-
-    });
-});
+// cart
+app.get('/cart'),function(request,response){
+    response.render('cart');
+}
 //Por categoria
-app.get('/store/:category', function(request,response){
+app.get('/store/:category?', function(request,response){
     
     var productos= db.collection('productos');
-
-    productos.find({category: request.params.category }).toArray(function(err,docs){
+    var query= {};
+    if(request.query.gender){
+        query.gender = request.query.gender;
+    }
+    if(request.params.category){
+        query.category = request.params.category;
+    }
+    productos.find(query).toArray(function(err,docs){
      assert.equal(null,err);
-    // console.log("encontramos atlantis");
-     var contexto ={
-         productos: docs
-     };
-     response.render('store',contexto);
-
-    });
-});
-//POR GENERO
-app.get('/store/:gender', function(request,response){
-    
-    var productos= db.collection('productos');
-
-    productos.find({gender: request.params.gender }).toArray(function(err,docs){
-     assert.equal(null,err);
-    // console.log("encontramos atlantis");
+    console.log(request.query);
      var contexto ={
          productos: docs
      };

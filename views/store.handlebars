@@ -5,44 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+     <link rel="stylesheet" href="/styles/store.css">
 </head>
 <body>
+    <div class="banner">
+        <div class="banner__logo">
+            <img src="/imagenes/logo.png" width="100px">
+        </div>
+        <div class="banner__blank">
+            <p class="banner__blank__blue">Blue Collection</p>
+        </div>
+        <div class="banner__car">
+            <button class="banner__car__num"><a href="/cart" class="link-cart"> <img src="/imagenesdos/cart.png"> <span class="carrito__num" ></span></a></button>
+            <img src="/icons/menu.svg" width="32px">
+        </div>
+    </div>
+   
+    <div class="content">
 
-    <h1>Online Store</h1>
-    <h2>Category</h2>
-    <h3>Type</h3>
-    <ul>
+        <div class="content__filters">
+              <h2 class="content__filters__title">Category</h2>
+    <h3 class="content__filters__title">Type</h3>
+    <ul class="content__filters__list">
         <li><a href="/store/top">Top</a></li>
          <li><a href="/store/bottom">Bottom</a></li>
          <li><a href="/store/accesories">Accesories</a></li>
     </ul>
-    <h3>Gender</h3>
-    <ul>
-        <li><a href="/store/man">Man</a></li>
-         <li><a href="/store/woman">Woman</a></li>
-         <li><a href="/store/unisex">Unisex</a></li>
+    <h3 class="content__filters__title">Gender</h3>
+    <ul class="content__filters__list">
+        <li><a href="/store?gender=man">Man</a></li>
+         <li><a href="/store?gender=woman">Woman</a></li>
+         <li><a href="/store?gender=unisex">Unisex</a></li>
     </ul>
+    <a href="/store" >Quitar filtros</a>
     <p>Price</p>
     <input type="range" min="20" max="80">
     
-    <ul>
+        </div>
+
+        <div class="content__products">
+            
     {{#each productos}}
-   <li>
-       <img src="{{imagen.[0]}}" width="200px">
-       <h3><a href="/product/{{name}}">{{name}}</a></h3>
-       <p>{{price}}</p>
+    <div class="content__products__element">
+        <li>
+       <img class="content__products__element__img" src="{{imagen.[0]}}">
+       <div class="content__products__element__info"> 
+           <div class="content__products__element__info__descrip">
+
+                <h3 ><a class="content__products__element__info__descrip__name" href="/product/{{name}}">{{name}}</a></h3>
+       <p class="content__products__element__info__descrip__price">{{price}}</p>
+           </div>
+
+           <div class="content__products__element__info__img">
+       <a class="content__products__element__info__img__btn"><img class="content__products__element__info__img__btn" src="./imagenesdos/buy.png"></a>
+
+           </div>
+       </div>
+      
         </li> 
+    </div>
+   
        {{/each}}
 
-    </ul>
-    <script>
-var rank = document.querySelector('.input-rank');
+    
+        </div>
 
-function byPrice (){
-
-}
-rank.addEventListener('input', byPrice);
-
-    </script>
+    </div>
+  
+    
+    <script src="/js/store.js"></script>
 </body>
 </html>
