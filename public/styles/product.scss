@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.top{
+width: 100vw;
+height: 10vh;
+display: flex;
+flex-direction: row;
+
+&__left{
+    width: 25%;
+}
+&__center{
+    width: 50%;
+}
+&__right{
+    width: 25%;
+}
+}
+.atras{
+    margin-left: 15%;
+}
+.product{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    &__images{
+        width: 60%;
+        display: flex;
+        margin-left: 15%;
+    flex-direction: row;
+        &__principal{
+
+        }
+       &__others{
+           margin-left: 1%;
+           display: flex;
+           flex-direction: column;
+           justify-content: space-between;
+       } 
+    }
+}
+
+.producto{
+    margin-left: 10%;
+
+    &__contenedor{
+        display: flex;
+        
+    }
+    &__titulo{
+        font-family: 'Poppins', sans-serif;
+        color: #2D2D2D;
+        font-size: 80px;
+        margin-top: 5%;
+    }
+    &__descripcion{
+        font-family: 'Poppins', sans-serif;
+        color: #2D2D2D;
+        font-size: 20px;
+        padding-right: 40%;
+        margin-top: 10%;
+    }
+    &__precio{
+        font-family: 'Poppins', sans-serif;
+        color: #2D2D2D;
+    }
+}

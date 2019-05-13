@@ -40,9 +40,9 @@ app.get('/', function(request,response){
 });
 
 // cart
-app.get('/cart'),function(request,response){
+app.get('/cart',function(request,response){
     response.render('cart');
-}
+});
 //Por categoria
 app.get('/store/:category?', function(request,response){
     
