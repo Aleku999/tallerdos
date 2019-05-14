@@ -12,11 +12,24 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-self: center;
     }
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formu{
+    margin-top: 10%;
 }
 .info{
     border: none;
     border-bottom: 1px solid    #2D2D2D;;
+    
+    align-self: center;
 }
 .label{
     font-family: 'Poppins', sans-serif;
@@ -28,4 +41,5 @@ h1{
     font-family: 'Poppins', sans-serif;
         color: #2D2D2D;
         font-size: 50px;
+        
 }
