@@ -35,6 +35,8 @@ app.engine('handlebars',hbs());
 
 app.set('view engine','handlebars');
 
+app.use(express.urlencoded({extended:true}));
+
 app.get('/', function(request,response){
     response.render('home');
 });
@@ -48,6 +50,10 @@ app.get('/store/:category?', function(request,response){
     
     var productos= db.collection('productos');
     var query= {};
+
+    if(request.query.price){
+        query.price = {$lt: parseInt(request.query.price)};
+    }
     if(request.query.gender){
         query.gender = request.query.gender;
     }
@@ -58,7 +64,8 @@ app.get('/store/:category?', function(request,response){
      assert.equal(null,err);
     console.log(request.query);
      var contexto ={
-         productos: docs
+         productos: docs,
+         price:request.query.price
      };
      response.render('store',contexto);
 
@@ -77,6 +84,28 @@ app.get('/product/:name', function(req,res){
      
     
   });
+  app.post('/pago', function(request, response){
+    // crear un archivo con la información del usuario
+    console.log(request.body);
+
+    var pedido = {
+        name: request.body.name,
+        document: request.body.document,
+        address: request.body.address,
+        email: request.body.email,
+        
+        productos: JSON.parse(request.body.productos),
+        fecha: new Date(),
+        estado: 'nuevo'
+    };
+
+    var collection = db.collection('pedidos');
+    collection.insertOne(pedido, function(err){
+        assert.equal(err, null);
+
+        console.log('pedido guardado');
+    });
+});
 
 app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/cart.css">
 </head>
 <body>
     <h1>Cart</h1>
@@ -13,7 +14,32 @@
 
         </ul>
     </div>
-    
+    <p>Final price </p>
+    <img class="producto__line" src="/imagenesdos/bigline.png">
+
+<form action="/pago" method="POST">
+
+        <label for="">Complete Name</label>
+        <input name="name" type="text" value="Alejandro">
+
+        <label for="">Identification document</label>
+        <input name="document" type="text" >
+
+         <label for="">Delivery address</label>
+        <input name="address" type="text" >
+        
+         <label for="">E-mail</label>
+        <input name="email" type="email" >
+
+        <input class="input-productos" type="hidden" name="productos" value="">
+
+        <button>Ingresar</button>
+    </form>
+
+    <p></p>
+   
+    <img src="/imagenesdos/order.png" class="send">
     <script src="/js/store.js"></script>
+    <script src="/js/form.js"></script>
 </body>
 </html>

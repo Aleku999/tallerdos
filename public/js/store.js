@@ -1,6 +1,16 @@
 var productos = [];
+var rango = document.querySelector('.input-rango');
+
+function buscarPrecio(){
+    location.href="/store?price=" + rango.value;
+}
+if(rango != null){
+    rango.addEventListener('change',buscarPrecio);
+}
+
 if(localStorage.getItem('productos') != null){
     productos = JSON.parse(localStorage.getItem('productos'));
+
 }
 
 var botones = document.querySelectorAll('.content__products__element__info__img__btn');
