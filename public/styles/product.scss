@@ -13,12 +13,21 @@ flex-direction: row;
 
 &__left{
     width: 25%;
+    margin-top: 3%;
+    margin-left: 3%;
 }
 &__center{
     width: 50%;
 }
 &__right{
     width: 25%;
+    margin-top: 3%;
+    margin-left: 55%;
+    
+    &__burger{
+        margin-left: 5%;
+    }
+
 }
 }
 .atras{
@@ -55,7 +64,17 @@ button{
 
     &__contenedor{
         display: flex;
+        flex-direction: column;
+
+        &__precio{
+        }
         
+    }
+    .producto__precio{
+        margin-top: 5%;}
+    .producto__comprar{
+        margin-top: 5%;
+        cursor: pointer;
     }
     &__titulo{
         font-family: 'Poppins', sans-serif;
@@ -74,4 +93,18 @@ button{
         font-family: 'Poppins', sans-serif;
         color: #2D2D2D;
     }
+}
+@media only screen and (max-width: 1000px) {
+.product{
+flex-direction: column-reverse;
+align-items: center;
+&__images{
+    width: 20vw;
+flex-direction: column;
+    &__principal{
+        width: 50px;
+    }
+    
+}
+}
 }

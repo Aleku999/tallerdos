@@ -1,20 +1,27 @@
 function paginaCargada(){
-    var principal = document.getElementById('contenedor');
+    var principal = document.getElementById('principal');
     var first = document.getElementById('first');
     var second = document.getElementById('second');
     var third = document.getElementById('third');
     var cambio = document.getElementById('cambio');
 
     function modFirst(){
-        principal.innerHTML= '<img id="principal" src="{{imagen.[0]}}" width="500px">';
+        var nuevaImg=this.getAttribute("src");
+        //console.log(this.getAttribute("src"));
+        principal.setAttribute("src", nuevaImg);
         console.log('principal');
     }
     function modSecond(){
-        principal.innerHTML= '<img id="principal" src="('+cambio.value+')" width="500px">';
-        console.log(principal);
+        var nuevaImg=this.getAttribute("src");
+        //console.log(this.getAttribute("src"));
+        principal.setAttribute("src", nuevaImg);
+        console.log('principal');
     }
     function modThird(){
-        principal.innerHTML= '<img id="principal" src="{{imagen.[2]}}" width="500px">';
+        var nuevaImg=this.getAttribute("src");
+        //console.log(this.getAttribute("src"));
+        principal.setAttribute("src", nuevaImg);
+        console.log('principal');
     }
 
     first.addEventListener('click',modFirst);

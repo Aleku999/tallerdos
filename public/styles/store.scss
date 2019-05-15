@@ -27,24 +27,44 @@ li{
 
     &__logo{
         width: 25%;
+        margin-top: 3%;
+        margin-left: 3%;
 
         
     }
     &__blank{
         width: 50%;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
         &__blue{
             font-family: 'Poppins', sans-serif;
             color:white;
             font-size: 96px;
             font-weight: 600;
+            align-self: auto;
+            margin-top: 10%; 
         }
     }
     &__car{
         width: 25%;
         display: flex;
+        margin-top: -7%;
         flex-direction: row;
+
+        &__num{
+            margin-left: 55%;
+        }
+        &__burger{
+            margin-left: 5%;
+        }
         
     }
+}
+button{
+    background:none;
+    border: none;
+    background-color: transparent;
 }
 .content{
     display: flex;
@@ -116,10 +136,114 @@ li{
                     
                     &__btn{
                         height: 52px;
+                        cursor: pointer;
                     }
                 }
             }
 
         }
     }
+}
+@media only screen and (max-width: 1000px) {
+    
+    .banner{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        background-image: url("../imagenesdos/bluecom.png");
+        &__logo{
+            width: 5%;
+    
+            
+        }
+        &__blank{
+            width: 50%;
+            &__blue{
+                font-family: 'Poppins', sans-serif;
+                color:white;
+                font-size: 40px;
+                font-weight: 600;
+            }
+        }
+        &__car{
+            width: 25%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+    }
+
+    .content{
+    display: flex;
+    flex-direction: row;
+
+    &__filters{
+        width: 13vw;
+        height: 50vh;
+        margin-top: 20%;
+        margin-left: 2%;
+        position: absolute;
+       
+        padding-left: 2%;
+        position: fixed;
+        box-shadow: 3px 3px 5px grey;
+        &__title{
+            margin-top: 10%;
+             font-family: 'Poppins', sans-serif;
+             color:white; 
+        }
+        &__list{
+            margin-top: 5%;
+            font-family: 'Poppins', sans-serif;
+            color:white;
+            text-decoration: none;
+            text-decoration-color: white;
+        }
+    }
+    &__products{
+        display:flex;
+        flex-direction: row;
+        list-style: none;
+        flex-wrap: wrap;
+        margin: 3%;
+        margin-top: 15%;
+        padding-left: 10%;
+
+        &__element{
+            margin-left: 5%;
+            margin-top: 3%;
+
+            &__img{
+                width: 350px;
+            }
+
+            &__info{
+                display: flex;
+                flex-direction: row;
+                width: 350px;
+                height: 10%;
+                justify-content: space-between;
+                padding-right: 22px;
+                background-color: #2D2D2D;
+                margin-top: -1.2%;
+
+                &__descrip{
+                    display: flex;
+                    flex-direction: column;
+
+                    &__name{
+                        font-family: 'Poppins', sans-serif;
+                        color: white;
+                    }
+                    &__price{
+                        font-family: 'Poppins', sans-serif;
+                        color: white;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
 }

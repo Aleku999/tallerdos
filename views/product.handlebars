@@ -15,8 +15,8 @@
         </div>
         <div class="top__center"> </div>
         <div class="top__right">
-            <button class=""><a href="/cart" class="link-cart"> <img src="/imagenesdos/cart.png"> <span class="carrito__num" ></span></a></button>
-            <img src="/icons/menublack.svg" width="32px">
+            <button class=""><a href="/cart" class="link-cart">  <span class="carrito__num" ></span> <img src="/imagenesdos/cartblack.png"></a></button>
+            <img class="top__right__burger" src="/icons/menublack.svg" width="32px">
         </div>
     </div>
     <a href="/store"><img src="/imagenesdos/atras.png" width="50px" class="atras"></a>
@@ -36,10 +36,8 @@
             <h1 class="producto__titulo">{{name}}</h1>
             <img class="producto__line" src="/imagenesdos/line.png">
             <p class="producto__descripcion">{{description}} </p>
-            <p class="producto_talla">Size</p>
-            
             <div class="producto__contenedor">
-                <h3 class="producto__precio">$ {{price}} </h3>
+                <h3 class="producto__precio">$ <span class="realPrice">{{price}}</span> </h3>
                 <a class="producto__comprar"><img  src="/imagenesdos/add.png"></a>
                </div> 
             <img class="producto__linetwo" src="/imagenesdos/line.png">
