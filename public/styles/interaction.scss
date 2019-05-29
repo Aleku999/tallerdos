@@ -3,9 +3,80 @@
     padding: 0;
 }
 
-.welcome{
-    font-family: 'Poppins', sans-serif;
-    color: #2D2D2D;
-    font-size: 100px;
-    opacity: 0;
+.aplication{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    .selectorContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        .selectorC{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 700px;
+            width: 100%;
+            .selector{
+                width: 400px;
+                height: 200px;
+                margin: 20px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                background: center cover no-repeat;
+                background-image: url("/interaccion/hombre/camisaH1.png");
+                filter: grayscale(55);
+                transition: all .5s ease;
+                
+                cursor: pointer;
+                &:hover{
+                    
+                    filter: grayscale(0)
+                }
+            }
+        }
+        .pantalones{
+            #pantalon2 {
+                height: 350px;
+                width: 500px;
+
+            }
+           .selector {
+                height: 350px;
+
+            }
+        }
+    }
+    
+    .complete{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 20%;
+        #camisaSelect{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 20px;
+            
+        }
+        #pantalonSelect{
+            width:100px;
+            height: 200px;
+            background-color: aqua;
+            margin: 20px;
+
+        }
+        #zapatoSelect{
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            margin: 20px;
+
+        }
+    }
 }
