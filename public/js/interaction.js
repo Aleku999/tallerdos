@@ -20,5 +20,16 @@ botones.forEach(boton=>{
 boton.addEventListener('click',moverBolsita);
 });
 
+var welome = document.querySelector (".welcome");
+var japan = document.querySelector(".japan");
+
+function animacionComplex(){
+    var t1 = new TimelineLite();
+    var first = welome;
+    t1.to(first, 0.1, {width:111,height:1200, opacity:100, delay: 4})
+
+    t1.play();
+}
+window.addEventListener('load',animacionComplex);
 
 console.log("hi");
