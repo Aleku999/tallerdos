@@ -7,10 +7,11 @@ function moverBolsita(){
     var hijo =bolsita;
     
     
-    tl.to(hijo,0.5, {x:50, y:0})
-    .to(hijo,0.5, {x:50, y:50})
-    .to(hijo,0.5, {x:-50, y:-50})
-    .to(hijo,0.5, {x:-50, y:0})
+    tl.to(hijo,0.1, {width:27, height:32})
+    .to(hijo,0.2, {width:37, height:40})
+    .to(hijo,0.1, {width:27, height:32})
+    .to(hijo,0.1, {width:32, height:35})
+    .to(hijo,0.1, {width:27, height:32})
     
     tl.play();
 }

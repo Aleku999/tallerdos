@@ -45,6 +45,10 @@ app.get('/', function(request,response){
 app.get('/cart',function(request,response){
     response.render('cart');
 });
+// cart
+app.get('/break',function(request,response){
+    response.render('interaction');
+});
 //Por categoria
 app.get('/store/:category?', function(request,response){
     

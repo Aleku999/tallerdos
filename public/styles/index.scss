@@ -580,6 +580,48 @@ text-decoration: none;
     }
 }
 
+.prom {
+    height: 100vh;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .line {
+    width: 100vw;
+  }
+  .left, .right {
+    width: 50vw;
+    overflow: hidden;
+    display: inline-block;
+  }
+  .left {
+    color:#232426;
+    transform: skew(0deg, -15deg);
+  }
+  .right {
+    color: #3D3D3D;
+    transform: skew(0deg, 15deg);
+  }
+  .left .content {
+    width: 100vw;
+    text-align: center;
+  }
+  .right .content {
+    width: 100vw;
+    text-align: center;
+    transform: translate(-50vw);
+  }
+  span {
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: black italic;
+    font-size: 8vw;
+    text-transform: uppercase;
+    line-height: .8;
+    transition: ease-out .6s;
+  }
 .fabric{
     width: 100vw;
     height: 100vh;
