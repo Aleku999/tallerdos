@@ -36,7 +36,6 @@ console.log("hi");
 
 var generoSelected = true;
 var camisa1 = document.querySelector("#camisa1");
-
 var camisa2 = document.querySelector("#camisa2");
 var camisa3 = document.querySelector("#camisa3");
 
@@ -82,6 +81,137 @@ function cambiarSelector(){
     }
 }
 var cambiar = document.querySelector(".change");
+var camisaSelect= document.querySelector("#camisaSelect");
+var pantalonSelect= document.querySelector("#pantalonSelect");
+var zapatoSelect= document.querySelector("#zapatoSelect");
+
+function cambiarSelected( tipo, numero){
+    if (generoSelected) {
+        if (tipo == 0){
+            if (numero == 1) {
+                console.log("la camisa masculina 1 se cambiara");
+                //cambiar camisa por camisa 1
+                camisaSelect.style.backgroundImage = "url('/interaccion/hombre/camisaH1.png')";
+            } else if (numero == 2) {
+                //cambiar camisa por camisa 2
+                camisaSelect.style.backgroundImage = "url('/interaccion/hombre/camisaH2.png')";
+            } else if (numero == 3) {
+                //cambiar camisa por camisa 3
+                camisaSelect.style.backgroundImage = "url('/interaccion/hombre/camisaH3.png')";
+            }
+        } else if (tipo == 1) {
+            if (numero == 1) {
+                
+                console.log("el pantalon masculino 1 se cambiara");
+                //cambiar pantalon por pantalon 1
+                pantalonSelect.style.backgroundImage = "url('/interaccion/hombre/pantalonH1.png')";
+            } else if (numero == 2) {
+                pantalonSelect.style.backgroundImage = "url('/interaccion/hombre/pantalonH2.png')";
+            //cambiar pantalon por pantalon 2
+            } else if (numero == 3) {
+                pantalonSelect.style.backgroundImage = "url('/interaccion/hombre/pantalonH3.png')";
+        //cambiar pantalon por pantalon 3
+            }
+        } else if (tipo == 2) {
+            if (numero == 1) {
+                zapatoSelect.style.backgroundImage = "url('/interaccion/hombre/zapatoH1.png')";
+    //cambiar zapatos por zapatos 1
+            } else if (numero == 2) {
+                zapatoSelect.style.backgroundImage = "url('/interaccion/hombre/zapatoH2.png')";
+    //cambiar zapatos por zapatos 1
+
+            } else if (numero == 3) {
+    //cambiar zapatos por zapatos 1
+    zapatoSelect.style.backgroundImage = "url('/interaccion/hombre/zapatoH3.png')";
+            }
+        }
+    
+    } else {
+        if (tipo == 0){
+            if (numero == 1) {
+                
+                console.log("la camisa femenina 1 se cambiara");
+                //cambiar camisa por camisa 1
+                camisaSelect.style.backgroundImage = "url('/interaccion/mujer/camisaM1.png')";
+            } else if (numero == 2) {
+                //cambiar camisa por camisa 2
+                camisaSelect.style.backgroundImage = "url('/interaccion/mujer/camisaM2.png')";
+            } else if (numero == 3) {
+                //cambiar camisa por camisa 3
+                camisaSelect.style.backgroundImage = "url('/interaccion/mujer/camisaM3.png')";
+            }
+        } else if (tipo == 1) {
+            if (numero == 1) {
+                
+                console.log("el pantalon femenino 1 se cambiara");
+                //cambiar pantalon por pantalon 1
+                pantalonSelect.style.backgroundImage = "url('/interaccion/mujer/pantalonM1.png')";
+            } else if (numero == 2) {
+    
+            //cambiar pantalon por pantalon 2
+                pantalonSelect.style.backgroundImage = "url('/interaccion/mujer/pantalonM2.png')";
+            } else if (numero == 3) {
+    
+        //cambiar pantalon por pantalon 3
+                pantalonSelect.style.backgroundImage = "url('/interaccion/mujer/pantalonM3.png')";
+            }
+        } else if (tipo == 2) {
+            if (numero == 1) {
+    
+    //cambiar zapatos por zapatos 1
+    zapatoSelect.style.backgroundImage = "url('/interaccion/mujer/zapatoM1.png')";
+            } else if (numero == 2) {
+
+    //cambiar zapatos por zapatos 1
+    
+    zapatoSelect.style.backgroundImage = "url('/interaccion/mujer/zapatoM2.png')";
+
+            } else if (numero == 3) {
+    //cambiar zapatos por zapatos 1
+    
+    zapatoSelect.style.backgroundImage = "url('/interaccion/mujer/zapatoM3.png')";
+    
+            }
+        }
+    }
+}
+
+
+camisa1.addEventListener('click', () => {
+    cambiarSelected(0, 1);
+})
+
+camisa2.addEventListener('click', () => {
+    cambiarSelected(0, 2);
+})
+
+camisa3.addEventListener('click', () => {
+    cambiarSelected(0, 3);
+})
+
+pantalon1.addEventListener('click', () => {
+    cambiarSelected(1, 1);
+})
+
+pantalon2.addEventListener('click', () => {
+    cambiarSelected(1, 2);
+})
+
+pantalon3.addEventListener('click', () => {
+    cambiarSelected(1, 3);
+})
+
+zapatos1.addEventListener('click', () => {
+    cambiarSelected(2, 1);
+})
+
+zapatos2.addEventListener('click', () => {
+    cambiarSelected(2, 2);
+})
+
+zapatos3.addEventListener('click', () => {
+    cambiarSelected(2, 3);
+})
 
 cambiar.addEventListener('click', ()=> {
     generoSelected = !generoSelected;
