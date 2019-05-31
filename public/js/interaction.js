@@ -1,6 +1,7 @@
 var botones = document.querySelectorAll(".content__products__element__info__img__btn");
 var bolsita = document.querySelector(".carrito__num__cart");
 
+
 function moverBolsita(){
 
     var tl =new TimelineLite();
