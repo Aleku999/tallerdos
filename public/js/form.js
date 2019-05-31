@@ -1,5 +1,6 @@
 window.addEventListener('load', function(){
     var form = document.querySelector('form');
+    var  order = document.querySelector('order');
     function enviarProductos(evento){
         //evento.preventDefault();
         console.log('hola');
@@ -10,4 +11,5 @@ window.addEventListener('load', function(){
         localStorage.removeItem('productos');
     }
     form.addEventListener('submit', enviarProductos);
+
 });

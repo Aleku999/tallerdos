@@ -8,6 +8,10 @@ var botones = document.querySelector(".botones");
 var principal =document.querySelector(".principal");
 var ready = document.querySelector(".ready");
 
+var all = document.querySelector(".all");
+var style= document.querySelector(".you");
+var botone= document.querySelector(".botone");
+
 TweenMax.from(line, 1, {opacity:0.3, x:-200});
 TweenMax.from(mmix, 1, {opacity:0.3, x:-200, delay: 1});
 TweenMax.from(principal, 1, {opacity:0.3, y:-100});
@@ -25,7 +29,9 @@ TweenMax.to(complete, 1, {y:-50, x:100});
 TweenMax.to(camisa, 1, {opacity:0.3, x:1000, });
 TweenMax.to(pantalon, 1.2, {opacity:0.3, x:1000, });
 TweenMax.to(zapato, 1.4, {opacity:0.3, x:1000, });
-TweenMax.to(botones, 1, {opacity:0.3, y:700, });
+TweenMax.to(botones, 1, {opacity:0, y:700, });
+TweenMax.to(all,0.1,{opacity:100});
+
 }
 
 ready.addEventListener('click',moverBolsita);

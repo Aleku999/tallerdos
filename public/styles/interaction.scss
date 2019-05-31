@@ -1,8 +1,72 @@
 *{
     margin: 0;
     padding: 0;
+    overflow-y: hidden; // hide vertical
+overflow-x: hidden; 
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+.all{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 50%;
+    opacity: 0;
+    transition: ease 200ms;
+}
+.you{
+    color: #3D3D3D;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        flex-wrap: nowrap;
+        font-size: 100px;
+}
+.botone{
+    display: flex;
+    flex-direction: row;
+    width: 500px;
+            .store{
+        background-color: #3D3D3D; 
+                border: none;
+                margin-top: -40%;
+                width: 70%;
+                height: 60%;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 2px;
+                align-self: center;
+                margin-bottom: 20%;
+                cursor: pointer;
+    }
+    .again{
+        background-color: #3D3D3D; 
+        border: none;
+        margin-top: -40%;
+        width: 50%;
+        height: 60%;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        align-self: center;
+        margin-bottom: 20%;
+        cursor: pointer; 
+        margin-left: 10%; 
+    }
 
+}
 .principal{
     width: 100vw;
     height: 10vh;
@@ -134,12 +198,12 @@ margin-top: 2%;
     .botones{
         display: flex;
         flex-direction: row;
-        width: 400px;
+        width: 500px;
                 .change{
             background-color: #3D3D3D; 
                     border: none;
                     margin-top: -40%;
-                    width: 60%;
+                    width: 70%;
                     height: 60%;
                     font-family: 'Poppins', sans-serif;
                     font-weight: 400;
@@ -152,8 +216,7 @@ margin-top: 2%;
                     margin: 4px 2px;
                     align-self: center;
                     margin-bottom: 20%;
-                    cursor: pointer;  
-                    margin-left: -10%;
+                    cursor: pointer;
         }
         .ready{
             background-color: #3D3D3D; 

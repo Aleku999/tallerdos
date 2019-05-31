@@ -126,8 +126,10 @@ app.get('/product/:name', function(req,res){
 
         console.log('pedido guardado');
     });
+    response.redirect('/');
 });
-/*
-app.listen(3000, function() {
+
+
+/*app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
   });*/
