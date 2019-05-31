@@ -1,19 +1,32 @@
 const express= require('express');
 const hbs = require ('express-handlebars');
+const app = express();
+
 //instalar Mongo
 var MongoClient =require('mongodb').MongoClient;
 var assert = require('assert');
-const app = express();
 
 //Conection URL
 const url= 'mongodb://localhost:27017';
-const dbName = 'skere';
+const dbName = 'tienda';
 
 //Create Clietn Object
-const client = new MongoClient(url);
-
+const client = new MongoClient(url, { useNewUrlParser: true});
 var db = null;
 
+MongoClient.connect(`mongodb+srv://cluster0-rfkyi.mongodb.net/tienda`, {
+    auth:{
+        user:'aj-taller',
+        password:'ContraseñaSuperSegura123'
+    }
+},
+function(err,client){
+    if(err) throw err;
+    db = client.db('tienda');
+    app.listen(process.env.PORT ||500);
+}
+);
+/*
 //connect 
 client.connect(function(err){
     assert.equal(null,err);
@@ -26,7 +39,7 @@ db =client.db(dbName);
 //client.close();
 
 });
-
+*/
 //Definir carpeta publica
 
 app.use(express.static('public'));
@@ -111,6 +124,6 @@ app.get('/product/:name', function(req,res){
     });
 });
 
-app.listen(3000, function() {
+/*app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
-  });
+  });*/
