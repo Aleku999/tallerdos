@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.aplication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+}
+
+.aplication__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.aplication__text__mix {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  color: #3D3D3D;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 900;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  height: 100%;
+  font-size: 100px;
+  margin-top: 50%;
+}
+
+.aplication__text__img {
+  margin-top: 50%;
+}
+
+.aplication .selectorContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+}
+
+.aplication .selectorContainer .selectorC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 700px;
+  width: 100%;
+}
+
+.aplication .selectorContainer .selectorC .selector {
+  width: 400px;
+  height: 200px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-filter: grayscale(55);
+          filter: grayscale(55);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+.aplication .selectorContainer .selectorC .selector:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.aplication .selectorContainer .pantalones #pantalon2 {
+  height: 350px;
+  width: 500px;
+}
+
+.aplication .selectorContainer .pantalones .selector {
+  height: 350px;
+}
+
+.aplication .complete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 20%;
+}
+
+.aplication .complete #camisaSelect {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.aplication .complete #pantalonSelect {
+  height: 350px;
+  width: 200px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.aplication .complete #zapatoSelect {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+/*# sourceMappingURL=interaction.css.map */
