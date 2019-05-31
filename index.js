@@ -59,6 +59,10 @@ app.get('/cart',function(request,response){
     response.render('cart');
 });
 // cart
+app.get('/collection',function(request,response){
+    response.render('collection');
+});
+// interacccion
 app.get('/break',function(request,response){
     response.render('interaction');
 });
@@ -123,7 +127,7 @@ app.get('/product/:name', function(req,res){
         console.log('pedido guardado');
     });
 });
-
-/*app.listen(3000, function() {
+/*
+app.listen(3000, function() {
     console.log('Aplicación ejemplo, escuchando el puerto 3000!');
   });*/

@@ -3,10 +3,28 @@
     padding: 0;
 }
 
+.principal{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+&__nav{
+margin-left: 5%;
+margin-top: 2%;
+}
+&__car{
+    margin-right: 5%;
+margin-top: 2%;
+}
+}
+
 .aplication{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-right: 50%;
     width: 100vw;
 
     &__text{
@@ -14,35 +32,39 @@
         flex-direction: row;
         height: 100%;
         width: 100%;
+        margin-left: -10%;
+        
         &__mix{
             transform: rotate(-90deg);
             color: #3D3D3D;
         font-family: 'Poppins', sans-serif;
-        font-weight:900;
+        font-weight: 400;
         flex-wrap: nowrap;
         height: 100%;
         font-size: 100px;
-        margin-top:50%;
+        margin-top:24%;
     }
     &__img{
-        margin-top:50%;
+        margin-top:13%;
+        
+        margin-left: -160px;
     }
     }
     .selectorContainer{
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         width: 80%;
+        margin-top: 10%;
+        margin-left: -5%;
         .selectorC{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
             max-width: 700px;
             width: 100%;
             .selector{
-                width: 400px;
-                height: 200px;
+                width: 200px;
+                height: 100px;
                 margin: 20px;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -59,12 +81,12 @@
         }
         .pantalones{
             #pantalon2 {
-                height: 350px;
-                width: 500px;
+                height: 175px;
+                width: 250 px;
 
             }
            .selector {
-                height: 350px;
+                height: 175px;
 
             }
         }
@@ -74,10 +96,16 @@
         display: flex;
         flex-direction: column;
         width: 20%;
+        height: 50%;
+        background-color: rgb(235, 235, 235);
+        margin-top: 5%;
+        margin-left: -40%;
+        align-items: center;
+
         #camisaSelect{
             width: 200px;
                 height: 200px;
-            margin: 20px;
+            margin: 10px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
@@ -85,22 +113,68 @@
 
         }
         #pantalonSelect{
-            height: 350px;
+            height: 300px;
             width: 200px;
-            margin: 20px;
+            margin: 10px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             transition: all .5s ease;
         }
         #zapatoSelect{
-            width: 200px;
-            height: 200px;
-            margin: 20px;
+            width: 150px;
+            height: 150px;
+            margin: 10px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             transition: all .5s ease;
         }
+    }
+    .botones{
+        display: flex;
+        flex-direction: row;
+        width: 400px;
+                .change{
+            background-color: #3D3D3D; 
+                    border: none;
+                    margin-top: -40%;
+                    width: 60%;
+                    height: 60%;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 20px;
+                    margin: 4px 2px;
+                    align-self: center;
+                    margin-bottom: 20%;
+                    cursor: pointer;  
+                    margin-left: -10%;
+        }
+        .ready{
+            background-color: #3D3D3D; 
+            border: none;
+            margin-top: -40%;
+            width: 50%;
+            height: 60%;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            margin: 4px 2px;
+            align-self: center;
+            margin-bottom: 20%;
+            cursor: pointer; 
+            margin-left: 10%; 
+        }
+
     }
 }

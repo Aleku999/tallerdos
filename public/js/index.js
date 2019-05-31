@@ -61,7 +61,7 @@ var swiper = new Swiper('.swiperWoman', {
 console.log(scrollY);
   var myScrollFunc = function() {
 	var y = window.scrollY;
-	if (y >= 900 && y<=3810) {
+	if (y >= 900 && y<=4720) {
 	  menu.innerHTML = "<img src='./icons/menublack.svg' class='burger__menu nav-toggle-bar'>";
 	}else {
 	  menu.innerHTML ="<img src='./icons/menu.svg' class='burger__menu nav-toggle-bar'>";

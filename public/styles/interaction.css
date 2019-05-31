@@ -3,6 +3,31 @@
   padding: 0;
 }
 
+.principal {
+  width: 100vw;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.principal__nav {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.principal__car {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
 .aplication {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,6 +39,7 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-right: 50%;
   width: 100vw;
 }
 
@@ -27,6 +53,7 @@
           flex-direction: row;
   height: 100%;
   width: 100%;
+  margin-left: -10%;
 }
 
 .aplication__text__mix {
@@ -34,16 +61,17 @@
           transform: rotate(-90deg);
   color: #3D3D3D;
   font-family: 'Poppins', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   height: 100%;
   font-size: 100px;
-  margin-top: 50%;
+  margin-top: 24%;
 }
 
 .aplication__text__img {
-  margin-top: 50%;
+  margin-top: 13%;
+  margin-left: -160px;
 }
 
 .aplication .selectorContainer {
@@ -54,12 +82,12 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  margin-top: 10%;
+  margin-left: -5%;
 }
 
 .aplication .selectorContainer .selectorC {
@@ -70,16 +98,13 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   max-width: 700px;
   width: 100%;
 }
 
 .aplication .selectorContainer .selectorC .selector {
-  width: 400px;
-  height: 200px;
+  width: 200px;
+  height: 100px;
   margin: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,12 +122,12 @@
 }
 
 .aplication .selectorContainer .pantalones #pantalon2 {
-  height: 350px;
-  width: 500px;
+  height: 175px;
+  width: 250 px;
 }
 
 .aplication .selectorContainer .pantalones .selector {
-  height: 350px;
+  height: 175px;
 }
 
 .aplication .complete {
@@ -114,12 +139,19 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 20%;
+  height: 50%;
+  background-color: #ebebeb;
+  margin-top: 5%;
+  margin-left: -40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .aplication .complete #camisaSelect {
   width: 200px;
   height: 200px;
-  margin: 20px;
+  margin: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -128,9 +160,9 @@
 }
 
 .aplication .complete #pantalonSelect {
-  height: 350px;
+  height: 300px;
   width: 200px;
-  margin: 20px;
+  margin: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -139,13 +171,70 @@
 }
 
 .aplication .complete #zapatoSelect {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   -webkit-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+.aplication .botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 400px;
+}
+
+.aplication .botones .change {
+  background-color: #3D3D3D;
+  border: none;
+  margin-top: -40%;
+  width: 60%;
+  height: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20%;
+  cursor: pointer;
+  margin-left: -10%;
+}
+
+.aplication .botones .ready {
+  background-color: #3D3D3D;
+  border: none;
+  margin-top: -40%;
+  width: 50%;
+  height: 60%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 20%;
+  cursor: pointer;
+  margin-left: 10%;
 }
 /*# sourceMappingURL=interaction.css.map */
